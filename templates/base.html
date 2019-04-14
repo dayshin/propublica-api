@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+
+
+<html>
+    <head>
+    </head>
+    <body>
+
+
+
+
+
+
+
+        </div>
+        <h1> </h1>
+
+        <body>
+            Names of Congressmen : <br>
+            {% for member in members %}
+            <button onclick="display()" type="button"> {{member['first_name']}} </button> <br>
+            {% endfor %}
+            <!-- for member in load_json['results'][0]['members']:
+                data += member['first_name'] + ' ' + member['last_name'] -->
+            <!-- Contests:
+
+            {% for contest in contests %} <br>
+                {{contest.name}} id: {{contest.id}}<br>
+            {% endfor %}
+
+    </body>
+</html>
